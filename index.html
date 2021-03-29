@@ -4,52 +4,117 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='icon' href='images/favicon/favicon.ico'/>
-    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/home.css">
         
     <title>Matthew Barton's Site</title>
   </head>
   <body>
-    <div class="col-md-8 mx-auto">
-      <h1>Hello, world!</h1>
-      <p>You've successfully loaded up the Bootstrap npm starter project!</p>
-      <p>If this button looks blue and the text purple, you've done it.</p>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click me!</button>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+    <div class="container">
+      <div class="col-md-8 mx-auto">
+          <h1>Matthew Barton</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-8 mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <svg width="32" height="32">
+                <use href="images/bootstrap-icons.svg#house-fill"/>
+              </svg></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <!-- <a class="nav-link" href="/about_me">About Me!</a> -->
+                <a class="nav-link" href="/">Resume</a>
+                <a class="nav-link" href="/">Transcript</a>
+                <a class="nav-link" href="/">Contact</a>
+              </div>
             </div>
           </div>
+        </nav>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="col-md-8 mx-auto">
+        <h2>Hello, world!</h2>
+        <p>
+          However you stumbled upon this page, and if you wish to know more about me, I encourage you to keep reading below and check out the tabs above. Hopefully this site will give you an accurate perception of Matthew Barton the developer and maybe Matthew Barton the human as well.
+        </p>
+        <h4>About Me!</h4>
+        <p>
+          I am a junior majoring in Computer Science and minoring in Mathematics at <a class="text-reset" href="https://www.trinity.edu/">Trinity University</a> in San Antonio, Texas. When I am not at school, I live back home in Cypress, Texas, just outside of Houston.
+        </p>
+        <p>
+          I started my coding journey in 2015 when I registered for Computer Programming 1 during my sophomore year at Cypress Woods High School (212, CDUB) where I created Scratch games and started learning Python. After that, it has been a non-stop road of learning and enjoyment. I have picked up many languages, platforms, and technologies along the way making each step more exciting than the last. My favorite language to use is Dart, though it's not very useful outside of <a class="text-reset" href="https://flutter.dev/">Flutter</a>. I am ecstatic to say that I will be working as a Software Engineer Intern at <a class="text-reset" rel="noreferrer noopener" href="https://www.coinbase.com/" data-type="URL" data-id="https://www.coinbase.com/" target="_blank">Coinbase</a> this 2021 summer.</p>
+        </p>
+        <p>
+          In the marginal free time afforded to me, I enjoy everything basketball: watching the NBA, running pick-up games, playing NBA2K. I also watch some football when I can. I am a huge fan of the San Antonio Spurs and LA Chargers. To blow off steam, I play video games with friends or by myself.
+        </p>
+        <h4>Ways to Reach Me</h4>
+        <p>
+          I'll share some professional and personal links below if you want to explore more about me. You can reach out to me via email for any matters. I keep my email at inbox zero.
+        </p>
+        <br>
+        <div class="row align-items-start">
+          <div class="col-auto">
+            <a class="text-reset" href="mailto:matthewrobbarton@gmail.com">
+              <svg class="icon" width="32" height="32">
+                <use href="images/bootstrap-icons.svg#mailbox"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="text-reset" href="https://www.linkedin.com/in/matthewbartontx/">
+              <svg class="icon" width="32" height="32">
+                <use href="images/bootstrap-icons.svg#linkedin"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="text-reset" href="https://github.com/MatthewNavy">
+              <svg class="icon" width="32" height="32">
+                <use href="images/bootstrap-icons.svg#github"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="text-reset" href="https://www.instagram.com/matthewbart0n/">
+              <svg class="icon" width="32" height="32">
+                <use href="images/bootstrap-icons.svg#instagram"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="text-reset" href="https://open.spotify.com/user/someguymatthew?si=La4-AJDESwOeEeuroyC_cg">
+              <img src="images/Spotify_Icon_CMYK_White.png" alt="spotify" width="32" height="32">
+            </a>
+          </div>
+          <!-- <div class="col-auto">
+            <a class="text-reset" href="https://www.hackerrank.com/MatthewBarton">
+              <svg class="icon" width="32" height="32">
+                <use href="images/hackerrank-svgrepo-com.svg"/>
+              </svg>
+            </a>
+          </div> -->
         </div>
       </div>
-
-      <hr class="my-5">
-
-      <h2>Adding Bootstrap Icons</h2>
-      <p><a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are included with the SVG sprite here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
-
-      <svg class="bi text-danger" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#heart-fill"/>
-      </svg>
-      <svg class="bi text-dark" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#toggles"/>
-      </svg>
-      <svg class="bi text-primary" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#shop"/>
-      </svg>
     </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+      <div class="row justify-content-center">
+        <div class="col-auto"> Built by Matthew Barton with <a class="text-reset" href="https://nodejs.org/en/">Node.js</a> and <a class="text-reset" href="https://getbootstrap.com/">Bootstrap</a></div>
+      </div>
+    </div>
+    
+    
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script type="module" src="assets/js/starter.js"></script>
