@@ -27,7 +27,7 @@ async function main() {
 //   const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient(
 //       {keyFilename: "C:/Users/charg/dev/matthewbarton-dev-analytics-c26ed17c44ce.json"});
  const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient({
-     keyFilename: google-credentials.json
+     keyFilename: "google-credentials.json"
  });
 
   // Calls listAccounts() method of the Google Analytics Admin API and prints
