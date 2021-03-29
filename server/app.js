@@ -23,9 +23,9 @@ async function main() {
   //  manually set the path to the service account JSON file instead of
   //  using the value from the GOOGLE_APPLICATION_CREDENTIALS environment
   //  variable.
-  const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient(
-      {keyFilename: "C:/Users/charg/dev/matthewbarton-dev-analytics-c26ed17c44ce.json"});
-  //const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient();
+//   const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient(
+//       {keyFilename: "C:/Users/charg/dev/matthewbarton-dev-analytics-c26ed17c44ce.json"});
+ const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient();
 
   // Calls listAccounts() method of the Google Analytics Admin API and prints
   // the response for each account.
