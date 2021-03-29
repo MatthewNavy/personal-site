@@ -3,7 +3,7 @@ const { google } = require('@google-analytics/admin/build/protos/protos');
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.port
 
 
 
