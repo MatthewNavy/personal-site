@@ -1,4 +1,5 @@
 const analyticsAdmin = require('@google-analytics/admin');
+const { google } = require('@google-analytics/admin/build/protos/protos');
 
 const express = require('express')
 const app = express()
@@ -26,7 +27,7 @@ async function main() {
 //   const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient(
 //       {keyFilename: "C:/Users/charg/dev/matthewbarton-dev-analytics-c26ed17c44ce.json"});
  const analyticsAdminClient = new analyticsAdmin.AnalyticsAdminServiceClient({
-     keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS
+     keyFilename: google-credentials.json
  });
 
   // Calls listAccounts() method of the Google Analytics Admin API and prints
