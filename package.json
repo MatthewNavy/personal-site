@@ -1,24 +1,24 @@
 {
-  "name": "bootstrap-npm-starter",
+  "name": "personal-site",
   "version": "1.4.0",
   "private": true,
-  "description": "Demo project for building a Bootstrap powered site via npm.",
+  "description": "matthewbarton.dev site",
   "author": "mdo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/bootstrap-npm-starter.git"
+    "url": "git+https://github.com/MatthewNavy/personal-site.git"
   },
   "bugs": {
     "url": "https://github.com/twbs/bootstrap-npm-starter/issues"
   },
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
-    "build": "npm run css",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
-    "css-lint": "stylelint scss/",
-    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "build": "npm run public/css",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 public/scss -o public/assets/css/",
+    "css-lint": "stylelint public/scss/",
+    "css-prefix": "postcss --replace public/assets/css/starter.css --use autoprefixer --map",
+    "css-purge": "purgecss --keyframes --css public/assets/css/starter.css --content public/index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output public/assets/css/",
     "css": "npm-run-all css-compile css-prefix",
     "server": "sirv --port 3000",
     "start": "npm-run-all --parallel watch server",
