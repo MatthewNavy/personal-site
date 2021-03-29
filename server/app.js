@@ -3,7 +3,7 @@ const { google } = require('@google-analytics/admin/build/protos/protos');
 
 const express = require('express')
 const app = express()
-const port = process.env.port
+const port = process.env.PORT || 3000
 
 
 
@@ -13,7 +13,7 @@ const port = process.env.port
 
 app.listen(port, () => {
   //console.log(`matthewbarton.dev listening at http://localhost:${port}`)
-  console.log('app listening on port ' + process.env.port);
+  console.log('app listening on port ' + port);
 })
 
 app.use(express.static('public'))
