@@ -34,8 +34,10 @@
     "template"
   ],
   "dependencies": {
+    "@google-analytics/admin": "^2.0.3",
     "bootstrap": "^5.0.0-beta3",
     "bootstrap-icons": "^1.4.0",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1"
   },

@@ -1,4 +1,3 @@
-'use strict';
 // Importing JavaScript
 //
 // You have two choices for including Bootstrap's JS files—the whole thing,
@@ -22,3 +21,7 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // import "../../node_modules/bootstrap/js/dist/util.js";
 // import "../../node_modules/bootstrap/js/dist/modal.js";
+
+
+
+
