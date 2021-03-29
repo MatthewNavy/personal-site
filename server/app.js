@@ -13,7 +13,7 @@ const port = process.env.port
 
 app.listen(port, () => {
   //console.log(`matthewbarton.dev listening at http://localhost:${port}`)
-  console.log('app listening on port 3000');
+  console.log('app listening on port ' + process.env.port);
 })
 
 app.use(express.static('public'))
