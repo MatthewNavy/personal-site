@@ -1,8 +1,7 @@
 const express = require('express')
-const cors = require('cors')
+//const cors = require('cors')
 //const { expr } = require('jquery');
 const path = require('path')
-const { reset } = require('nodemon')
 const app = express()
 const port = process.env.PORT || 3000
 
