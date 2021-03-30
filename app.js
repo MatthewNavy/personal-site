@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 
 
 app.get('/contact', function(req, res) { 
-  res.sendFile('C:/Users/charg/dev/personal-site/public/contact.html')
+  res.sendFile(path.join(__dirname, '/public/contact.html'))
 });
 
 app.listen(port, () => {
