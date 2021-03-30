@@ -9,7 +9,8 @@
 //
 // Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
-import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+//import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+//import 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js'
 //import bootstrap from 'bootstrap';
 
 
