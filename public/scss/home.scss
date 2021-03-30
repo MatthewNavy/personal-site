@@ -92,3 +92,18 @@ body {
   color: #fff;
   fill: #fff;
 }
+
+.hidden-button {
+  color: $body-bg;
+  stop-color: $body-bg;
+  flood-color: $body-bg;
+  caret-color: $body-bg;
+  text-emphasis-color: $body-bg;
+  text-decoration-color: $body-bg;
+  //outline-color: $body-bg;
+  lighting-color: $body-bg;
+  scrollbar-color: $body-bg;
+  background-color: $body-bg;
+  border-color: $body-bg;
+  fill: $body-bg;
+}
