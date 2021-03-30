@@ -23,6 +23,25 @@
 
 // import "../../node_modules/bootstrap/js/dist/util.js";
 // import "../../node_modules/bootstrap/js/dist/modal.js";
-// fetch('https://matthewbarton.dev/contact')
-//     .then(response => response.json())
-//     .then(text => console.log(data));
+
+// function fetchPost(route, data, success) {
+// 	fetch(route, { 
+// 		method: 'POST',
+// 		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+// 		body: Object.keys(data).map(key => encodeURIComponent(key)+'='+encodeURIComponent(data[key])).join('&')
+// 	}).then(res => res.text()).then(body => success(body));
+// }
+
+
+// function fetchLoad(id, route) {
+// 	fetch(route).then(res => res.text()).then(body => {
+// 		document.getElementById(id).innerHTML = body;
+// 	});
+// }
+
+// const homeView = document.getElementById('home-view');
+// const resumeView = document.getElementById('resume-view');
+// const trasncriptView = document.getElementById('transcript-view');
+// const contactView = document.getElementById('contact-view');
+
+// homeView.onclick((e) => document.)
