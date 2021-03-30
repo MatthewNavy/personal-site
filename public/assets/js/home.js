@@ -22,4 +22,6 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // import "../../node_modules/bootstrap/js/dist/util.js";
 // import "../../node_modules/bootstrap/js/dist/modal.js";
-
+// fetch('https://matthewbarton.dev/contact')
+//     .then(response => response.json())
+//     .then(text => console.log(data));

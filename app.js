@@ -1,12 +1,18 @@
-const express = require('express');
-const { expr } = require('jquery');
+const express = require('express')
+const cors = require('cors')
+//const { expr } = require('jquery');
 const path = require('path')
+const { reset } = require('nodemon')
 const app = express()
 const port = process.env.PORT || 3000
 
 
+
+//app.use(cors())
+
 app.get('/contact', function(req, res) { 
   res.sendFile(path.join(__dirname, '/public/contact.html'))
+  //res.json({hello: 'hey'})
 });
 
 app.listen(port, () => {
