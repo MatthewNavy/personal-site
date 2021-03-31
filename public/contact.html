@@ -40,8 +40,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="navbar-nav">
                 <!-- <a class="nav-link" href="/about_me">About Me!</a> -->
-                <a class="nav-link" href="/">Resume</a>
-                <a class="nav-link" href="/">Transcript</a>
+                <a class="nav-link" href="/resume">Resume</a>
+                <a class="nav-link" href="/transcript">Transcript</a>
                 <a class="nav-link active" href="/contact">Contact</a>
                 <!-- <a class="nav-link" href="/">Message Board</a> -->
               </div>
@@ -50,24 +50,88 @@
         </nav>
       </div>
     </div>
+
     
     <br>
+    
     <div class="container">
         <div class="col-8 mx-auto">
-          <h3><i>(Still a WIP)</i></h3>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Your email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="legofan16@hotmail.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dear mBar,"></textarea>
-          </div>
-          <!-- <div class="mb-7">
+          <h2>Social Links</h2>
+          <div class="row align-items-start">
+            <div class="col-auto">
+              <div data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                <a class="text-reset" href="mailto:matthewrobbarton@gmail.com">
+                  <svg class="icon" width="32" height="32">
+                    <use href="images/bootstrap-icons.svg#envelope"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                <a class="text-reset" href="https://www.linkedin.com/in/matthewbartontx/">
+                  <svg class="icon" width="32" height="32">
+                    <use href="images/bootstrap-icons.svg#linkedin"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                <a class="text-reset" href="https://github.com/MatthewNavy">
+                  <svg class="icon" width="32" height="32">
+                    <use href="images/bootstrap-icons.svg#github"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                <a class="text-reset" href="https://www.instagram.com/matthewbart0n/">
+                  <svg class="icon" width="32" height="32">
+                    <use href="images/bootstrap-icons.svg#instagram"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div data-bs-toggle="tooltip" data-bs-placement="top" title="Spotify">
+                <a id="secret" class="text-reset" href="https://open.spotify.com/user/someguymatthew?si=La4-AJDESwOeEeuroyC_cg" onclick="gtag('event', 'select_content')">
+                  <img src="images/Spotify_Icon_CMYK_White.png" alt="spotify" width="32" height="32">
+                </a>
+              </div>
+            </div>
             
-          </div> -->
-          <button type="button" class="btn btn-light">Send!</button>
-          (does nothing right now)
+          <br>
+          <br>
+          <br>
+
+          <h2>Send me a message!</h2>
+          <form action="/sendMessage" method="POST">
+            <div class="mb-3">
+              Your name
+              <div class="input-group flex-nowrap">
+                <input name="fullname" type="text" class="form-control" placeholder="Satoshi Nakamoto" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+            <br>
+          <div class="mb-3">
+            Your email address
+            <div class="input-group flex-nowrap">
+              <input name="username" type="text" class="form-control" placeholder="legofan16" aria-label="Username" aria-describedby="addon-wrapping">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+              <input name="domain" type="text" class="form-control" placeholder="hotmail.com" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+          <br>
+          <div class="mb-3">
+            Your message
+            <div class="input-group flex-nowrap">
+              <label for="controlTextArea" class="form-label"></label>
+              <textarea name="message" class="form-control" id="message-input" rows="3" placeholder="Dear mBar,"></textarea>
+            </div>
+          </div>
+          <br>
+          <button id="send-button" type="submit" class="btn btn-light">Send!</button>
+        </form>
         </div>
     </div>
     

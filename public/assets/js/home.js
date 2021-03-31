@@ -38,3 +38,8 @@
 // 		document.getElementById(id).innerHTML = body;
 // 	});
 // }
+
+// const secret = document.getElementById('secret');
+// secret.onclick((e) => {
+//     gtag('event', 'select_content')
+// })
