@@ -107,7 +107,7 @@
           <br>
 
           <h2>Send me a message!</h2>
-          <form action="/sendMessage" method="POST">
+          <form action="/sendMessage" method="POST" id="form">
             <div class="mb-3">
               Your name
               <div class="input-group flex-nowrap">
@@ -130,11 +130,20 @@
             </div>
           </div>
           <br>
-          <button id="send-button" type="submit" class="btn btn-light">Send!</button>
+          <div class="row">
+            <div class="col-2">
+              <button id="sendButton" type="submit" class="btn btn-light">Send!</button>
+            </div>
+            <div class="col-8">
+              <div hidden="true" id="alert" class="alert alert-success" role="alert">
+                Message sent!
+              </div>
+            </div>
+          </div>
+            
         </form>
         </div>
     </div>
-    
 
     <br>
     <br>
@@ -154,6 +163,6 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
     <!-- <script src="/../node_modules/jquery/dist/jquery.slim.min.js"></script> -->
-    <script type="module" src="assets/js/home.js"></script>
+    <script type="module" src="assets/js/contact.js"></script>
   </body>
 </html>

@@ -24,20 +24,6 @@
 // import "../../node_modules/bootstrap/js/dist/util.js";
 // import "../../node_modules/bootstrap/js/dist/modal.js";
 
-// function fetchPost(route, data, success) {
-// 	fetch(route, { 
-// 		method: 'POST',
-// 		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-// 		body: Object.keys(data).map(key => encodeURIComponent(key)+'='+encodeURIComponent(data[key])).join('&')
-// 	}).then(res => res.text()).then(body => success(body));
-// }
-
-
-// function fetchLoad(id, route) {
-// 	fetch(route).then(res => res.text()).then(body => {
-// 		document.getElementById(id).innerHTML = body;
-// 	});
-// }
 
 // const secret = document.getElementById('secret');
 // secret.onclick((e) => {

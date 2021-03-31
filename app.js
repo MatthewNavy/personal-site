@@ -58,6 +58,7 @@ app.post('/sendMessage', function(req, res) {
       res.sendStatus(404);
     } else {
       console.log('Email sent');
+
       res.redirect('/contact');
     }
   });
