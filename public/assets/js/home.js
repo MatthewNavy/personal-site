@@ -38,10 +38,3 @@
 // 		document.getElementById(id).innerHTML = body;
 // 	});
 // }
-
-// const homeView = document.getElementById('home-view');
-// const resumeView = document.getElementById('resume-view');
-// const trasncriptView = document.getElementById('transcript-view');
-// const contactView = document.getElementById('contact-view');
-
-// homeView.onclick((e) => document.)
