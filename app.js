@@ -13,15 +13,19 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.get('/contact', function(req, res) { 
-  res.sendFile(path.join(__dirname, '/public/contact.html'))
+  res.sendFile(path.join(__dirname, '/public/contact.html'));
 });
 
 app.get('/resume', function(req, res) { 
-  res.sendFile(path.join(__dirname, '/public/resume.html'))
+  res.sendFile(path.join(__dirname, '/public/resume.html'));
 });
 
-app.get('/transcript', function(req, res) { 
-  res.sendFile(path.join(__dirname, '/public/transcript.html'))
+app.get('/pdfs', function(req, res) { 
+  res.sendFile(path.join(__dirname, '/public/pdfs.html'));
+});
+
+app.get('/resumePDF', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/pdf/ResumeMB.pdf'));
 });
 
 app.get('/', function(req, res) {''
@@ -33,7 +37,7 @@ const transporter = nodemailer.createTransport({
   service: 'AOL',
   auth: {
     user: 'mbardev@aol.com',
-    pass: 'vgrhyqxtfnanfuuj' // I'll know if you logged on :)
+    pass: process.env.NODE_MAILER // I'll know if you logged on :)
   }
 });
 
