@@ -24,8 +24,8 @@ app.get('/pdfs', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/pdfs.html'));
 });
 
-app.get('/resumePDF', function(req, res) {
-  res.sendFile(path.join(__dirname, '/public/pdf/ResumeMB.pdf'));
+app.get('/books', function(req, res) { 
+  res.sendFile(path.join(__dirname, '/public/books.html'));
 });
 
 app.get('/', function(req, res) {''
