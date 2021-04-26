@@ -62,7 +62,7 @@ app.post('/sendMessage', function(req, res) {
       res.sendStatus(404);
     } else {
       console.log('Email sent');
-
+      messageCount += 1;
       res.redirect('/contact');
     }
   });
@@ -70,9 +70,9 @@ app.post('/sendMessage', function(req, res) {
   
 });
 
-app.listen(port, () => {
-  //console.log(`matthewbarton.dev listening at http://localhost:${port}`)
-  console.log('app listening on port ' + port);
-});
+// app.listen(port, () => {
+//   //console.log(`matthewbarton.dev listening at http://localhost:${port}`)
+//   console.log('app listening on port ' + port);
+// });
 
 app.use(express.static('public'));
