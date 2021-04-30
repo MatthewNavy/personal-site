@@ -28,6 +28,10 @@ app.get('/books', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/books.html'));
 });
 
+app.get('/error', function(req, res) { 
+  res.sendFile(path.join(__dirname, '/public/error.html'));
+});
+
 app.get('/', function(req, res) {''
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
@@ -37,7 +41,8 @@ const transporter = nodemailer.createTransport({
   service: 'AOL',
   auth: {
     user: 'mbardev@aol.com',
-    pass: process.env.NODE_MAILER // I'll know if you logged on :)
+    //pass: process.env.NODE_MAILER // I'll know if you logged on :)
+    pass: 'vgrhyqxtfnanfuuj'
   }
 });
 
@@ -46,9 +51,13 @@ app.post('/sendMessage', function(req, res) {
   const username = req.body.username;
   const domain = req.body.domain;
   const message = req.body.message;
-  
 
-  const emailText = fullname + "\n" + username + "@" + domain + "\n" + message;
+  const badMessage = isBadText(fullname) || isBadText(username) || isBadText(domain) || isBadText(message);
+
+  let emailText = fullname + "\n" + username + "@" + domain + "\n" + message;
+  if(badMessage) {
+    emailText = "THIS MESSAGE HAS EMBEDDED HTML\n" + emailText;
+  }
   
   const mailOptions = {
     from: 'mbardev@aol.com',
@@ -58,8 +67,8 @@ app.post('/sendMessage', function(req, res) {
   };
   
   transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      res.sendStatus(404);
+    if (error || badMessage) {
+      res.redirect('/error');
     } else {
       console.log('Email sent');
       messageCount += 1;
@@ -76,3 +85,8 @@ app.listen(port, () => {
 });
 
 app.use(express.static('public'));
+
+function isBadText(text) {
+  //console.log(/<.+>/g.test(text));
+  return /<.+>/g.test(text);
+}
