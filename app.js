@@ -68,7 +68,8 @@ app.post('/sendMessage', function(req, res) {
   
   transporter.sendMail(mailOptions, function(error, info){
     if (error || badMessage) {
-      res.redirect('/error');
+      //res.redirect('/error');
+	  res.sendStatus(418);
     } else {
       console.log('Email sent');
       messageCount += 1;
