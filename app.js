@@ -20,6 +20,14 @@ app.get('/resume', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/resume.html'));
 });
 
+app.get('/resume.pdf', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/pdf/resume.pdf'));
+});
+
+app.get('/transcript.pdf', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/pdf/transcript.pdf'));
+});
+
 app.get('/pdfs', function(req, res) { 
   res.sendFile(path.join(__dirname, '/public/pdfs.html'));
 });
